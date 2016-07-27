@@ -1,9 +1,9 @@
 port:  5000
 markdown: kramdown
-name: "My Reps"
-url: http://findmyreps.datamade.us
+name: "Bluest Lie"
+url: http://byp100.github.io/bluest-lie
 encoding: utf-8
 timezone: America/Chicago
-description: "Enter your address to find and contact your federal, state, county and local elected representatives"
+description: "Join the campaign to fight the 'Blue Lives Matter' ordinance!"
 gems:
   - jekyll-redirect-from
