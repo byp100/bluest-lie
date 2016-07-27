@@ -160,7 +160,7 @@ layout: default
                 <% if (info.person.photoUrl) { %>
                     <img class="img-rounded headshot" src="<%= info.person.photoUrl %>" alt="<%= info.person.name %>" title="<%= info.person.name %>" />
                 <% } else { %>
-                    <img class="img-rounded headshot" src="/images/blank-person.jpg" alt="<%= info.person.name %>" title="<%= info.person.name %>" />
+                    <img class="img-rounded headshot" src="{{ site.github.url }}/images/blank-person.jpg" alt="<%= info.person.name %>" title="<%= info.person.name %>" />
                 <% } %>
             </td>
             <td>
@@ -232,7 +232,7 @@ layout: default
             <% if (info.person.photoUrl) { %>
                 <img class="img-rounded img-responsive" src="<%= info.person.photoUrl %>" alt="<%= info.person.name %>" title="<%= info.person.name %>" />
             <% } else { %>
-                <img class="img-rounded img-responsive" src="/images/blank-person.jpg" alt="<%= info.person.name %>" title="<%= info.person.name %>" />
+                <img class="img-rounded img-responsive" src="{{ site.github.url }}/images/blank-person.jpg" alt="<%= info.person.name %>" title="<%= info.person.name %>" />
             <% } %>
             <br />
             <strong><%= info.person.name %> <%= formatParty(info.person.party) %></strong><br />
