@@ -34,15 +34,15 @@
       <meta content="{{ site.description }}" property="og:description">
     {% endif %}
     {% if page.url %}
-      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+      <meta content="{{ site.github.url }}{{ page.url }}" property="og:url">
     {% endif %}
     {% if page.date %}
       <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     {% endif %}
     {% if page.image %}
-      <meta content="{{ site.url }}/{{ page.image }}" property="og:image">
+      <meta content="{{ site.github.url }}/{{ page.image }}" property="og:image">
     {% else %}
-      <meta content="{{ site.url }}/images/usa.png" property="og:image">
+      <meta content="{{ site.github.url }}/images/usa.png" property="og:image">
     {% endif %}
     {% if page.categories %}
       {% for category in page.categories limit:1 %}
@@ -65,7 +65,7 @@
       <meta name="twitter:title" content="{{ site.title }}">
     {% endif %}
     {% if page.url %}
-      <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+      <meta name="twitter:url" content="{{ site.github.url }}{{ page.url }}">
     {% endif %}
     {% if page.description %}
       <meta name="twitter:description" content="{{ page.description }}">
@@ -73,27 +73,27 @@
       <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
     {% if page.image %}
-      <meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.image }}">
+      <meta name="twitter:image:src" content="{{ site.github.url }}/images/{{ page.image }}">
     {% else %}
-      <meta name="twitter:image:src" content="{{ site.url }}/images/usa.png">
+      <meta name="twitter:image:src" content="{{ site.github.url }}/images/usa.png">
     {% endif %}
-      <link href="/css/bootstrap.min.css" rel="stylesheet">
+      <link href="{{ site.github.url }}/css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-      <link rel="stylesheet" href="/css/custom.css">
+      <link rel="stylesheet" href="{{ site.github.url }}/css/custom.css">
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
       <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
-      <script src="/lib/modernizr-2.6.2.min.js"></script>
-      <script src="/lib/bootstrap.min.js"></script>
-      <script src="/lib/jquery.dataTables.min.js"></script>
-      <script src="/lib/jquery.dataTables.sorting.js"></script>
-      <script src="/lib/jquery.address.js"></script>
-      <script src="/lib/dataTables.bootstrap.js"></script>
-      <script src="/lib/spin.min.js" type="text/javascript"></script>
-      <script src="/lib/jquery.spin.js" type="text/javascript"></script>
-      <script src="/lib/ejs_production.js" type="text/javascript"></script>
+      <script src="{{ site.github.url }}/lib/modernizr-2.6.2.min.js"></script>
+      <script src="{{ site.github.url }}/lib/bootstrap.min.js"></script>
+      <script src="{{ site.github.url }}/lib/jquery.dataTables.min.js"></script>
+      <script src="{{ site.github.url }}/lib/jquery.dataTables.sorting.js"></script>
+      <script src="{{ site.github.url }}/lib/jquery.address.js"></script>
+      <script src="{{ site.github.url }}/lib/dataTables.bootstrap.js"></script>
+      <script src="{{ site.github.url }}/lib/spin.min.js" type="text/javascript"></script>
+      <script src="{{ site.github.url }}/lib/jquery.spin.js" type="text/javascript"></script>
+      <script src="{{ site.github.url }}/lib/ejs_production.js" type="text/javascript"></script>
 
     </head>
     <body>
@@ -131,7 +131,7 @@
         </div>
       </div>
     </div>
-    <script src="/js/analytics_lib.js"></script>
+    <script src="{{ site.github.url }}/js/analytics_lib.js"></script>
     
   </body>
 </html>
